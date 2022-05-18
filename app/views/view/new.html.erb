@@ -1,10 +1,11 @@
-<h1>New Activity in <%= @post.place_id %></h1>
-
-<%= form_with :model =>@post do |form| %>
+<form action="/view" method="post">
   <p>
-    <%= form.label "title", "Title" %>
-    <%= form.text_field "title" %>
+    <label for="title">Name</label>
+    <input type="text" name="title" id="title">
   </p>
-
-  <%= form.submit %>
-<% end %>
+  <p>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+  </p>
+  <button>Submit</button>
+</form>

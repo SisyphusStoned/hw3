@@ -6,4 +6,5 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-palces = Place.create([{ name: "Mexico City" }, { name: "Charleston" }, { name: "Beijing" }, { name: "Amsterdam" }])
+posts = Post.create([{ title: "Mexico City Day 1", description:"Test", posted_on: Date.today, place_id:"1"}])
+place = Place.create([{ name: "Mexico City" }, { name: "Amersterdam" }])

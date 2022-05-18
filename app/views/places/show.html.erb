@@ -1,5 +1,13 @@
 <h1><%= @place["name"] %></h1>
 
+<p> There are <%=@posts.count %> records </p>
+
+<% for temp_post in @posts %>
+  <p><b><%= temp_post.title%></b></p>
+  <p><small><%= temp_post.posted_on%></small></p>
+  <p><%= temp_post.description%></p>
+<% end %>
+
 <p>
-  <a href="/view/new?place_id=<%= @place.id %>">New activity for <%= @place.name %></a>
+<a href="/posts/new?place_id=<%= @place.id %>">New activity for <%= @place.name %></a>
 </p>
