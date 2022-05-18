@@ -1,1 +1,10 @@
-<h1>New City Activity</h1>
+<h1>New Activity in <%= @post.place_id %></h1>
+
+<%= form_with :model =>@post do |form| %>
+  <p>
+    <%= form.label "title", "Title" %>
+    <%= form.text_field "title" %>
+  </p>
+
+  <%= form.submit %>
+<% end %>
